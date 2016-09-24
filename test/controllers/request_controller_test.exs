@@ -5,11 +5,6 @@ defmodule MostWanted.RequestControllerTest do
   @valid_attrs %{body: "some content", title: "some content"}
   @invalid_attrs %{}
 
-  test "lists all entries on index", %{conn: conn} do
-    conn = get conn, request_path(conn, :index)
-    assert html_response(conn, 200) =~ "Listing requests"
-  end
-
   test "renders form for new resources", %{conn: conn} do
     conn = get conn, request_path(conn, :new)
     assert html_response(conn, 200) =~ "New request"
