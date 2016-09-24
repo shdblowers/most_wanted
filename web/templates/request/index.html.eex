@@ -1,0 +1,5 @@
+<div class="list-group">
+  <%= for request <- @requests do %>
+    <%= link request.title, to: request_path(@conn, :show, request), class: "list-group-item" %>
+  <% end %>
+</div>
