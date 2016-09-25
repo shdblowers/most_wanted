@@ -21,12 +21,6 @@ defmodule MostWanted.RequestControllerTest do
     assert html_response(conn, 200) =~ "New request"
   end
 
-  test "shows chosen resource", %{conn: conn} do
-    request = Repo.insert! %Request{}
-    conn = get conn, request_path(conn, :show, request)
-    assert html_response(conn, 200) =~ "Show request"
-  end
-
   test "renders page not found when id is nonexistent", %{conn: conn} do
     assert_error_sent 404, fn ->
       get conn, request_path(conn, :show, -1)
