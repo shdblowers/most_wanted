@@ -1,18 +1,13 @@
-<h2>Show request</h2>
-
-<ul>
-
-  <li>
-    <strong>Title:</strong>
-    <%= @request.title %>
-  </li>
-
-  <li>
-    <strong>Body:</strong>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4><%= @request.title %></h4>
+  </div>
+  <div class="panel-body">
     <%= @request.body %>
-  </li>
+  </div>
+</div>
 
-</ul>
-
-<%= link "Edit", to: request_path(@conn, :edit, @request) %>
-<%= link "Back", to: request_path(@conn, :index) %>
+<div class="btn-group" role="group" aria-label="...">
+  <%= link "Edit", to: request_path(@conn, :edit, @request), class: "btn btn-default" %>
+  <%= link "Back", to: request_path(@conn, :index), class: "btn btn-default" %>
+</div>
