@@ -7,7 +7,9 @@
   </div>
 </div>
 
-<div class="btn-group" role="group" aria-label="...">
-  <%= link "Edit", to: request_path(@conn, :edit, @request), class: "btn btn-default" %>
-  <%= link "Back", to: request_path(@conn, :index), class: "btn btn-default" %>
+<div class="btn-group">
+  <%= link "Back", to: request_path(@conn, :index),
+                   class: "btn btn-default" %>
+  <%= link "Edit", to: request_path(@conn, :edit, @request),
+                   class: "btn btn-default" %>
 </div>
