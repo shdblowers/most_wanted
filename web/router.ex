@@ -16,7 +16,7 @@ defmodule MostWanted.Router do
   scope "/", MostWanted do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", RequestController, :index
     resources "/requests", RequestController
   end
 
