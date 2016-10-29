@@ -12,7 +12,7 @@ config :most_wanted,
 # Configures the endpoint
 config :most_wanted, MostWanted.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "krKUmh2rIiyKMJvmmojDbRKfI7xVvQ1D1Yq1lnTm1g2sYFS9gpMSs4B96kndDGue",
+  secret_key_base: "qlJInfRzugc7WghVJvm0xjTeIML9U+ANkz7NDvKZTTNYezaZe9HdWUid8yYkQOL8",
   render_errors: [view: MostWanted.ErrorView, accepts: ~w(html json)],
   pubsub: [name: MostWanted.PubSub,
            adapter: Phoenix.PubSub.PG2]

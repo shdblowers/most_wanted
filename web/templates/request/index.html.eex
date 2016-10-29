@@ -1,6 +1,0 @@
-<ul class="list-group">
-  <%= link "Add new request", to: request_path(@conn, :new, %{}), class: "list-group-item active" %>
-  <%= for request <- @requests do %>
-    <%= link request.title, to: request_path(@conn, :show, request), class: "list-group-item" %>
-  <% end %>
-</ul>

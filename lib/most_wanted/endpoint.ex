@@ -36,7 +36,7 @@ defmodule MostWanted.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_most_wanted_key",
-    signing_salt: "EIc1+5He"
+    signing_salt: "xBb16S0Y"
 
   plug MostWanted.Router
 end
