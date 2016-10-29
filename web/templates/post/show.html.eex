@@ -1,18 +1,12 @@
-<h2>Show post</h2>
-
-<ul>
-
-  <li>
-    <strong>Title:</strong>
-    <%= @post.title %>
-  </li>
-
-  <li>
-    <strong>Body:</strong>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= @post.title %></h3>
+  </div>
+  <div class="panel-body">
     <%= @post.body %>
-  </li>
+  </div>
+</div>
 
-</ul>
 <%= link "Back", to: post_path(@conn, :index) %>
 <br />
 <%= link "Edit", to: post_path(@conn, :edit, @post) %>
