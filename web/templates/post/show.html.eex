@@ -13,6 +13,7 @@
   </li>
 
 </ul>
-
-<%= link "Edit", to: post_path(@conn, :edit, @post) %>
 <%= link "Back", to: post_path(@conn, :index) %>
+<br />
+<%= link "Edit", to: post_path(@conn, :edit, @post) %>
+<%= link "Delete", to: post_path(@conn, :delete, @post), method: :delete %>
