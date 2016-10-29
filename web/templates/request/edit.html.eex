@@ -3,4 +3,6 @@
 <%= render "form.html", changeset: @changeset,
                         action: request_path(@conn, :update, @request) %>
 
-<%= link "Back", to: request_path(@conn, :index) %>
+<div class="btn-group">                        
+  <%= link "Back", to: request_path(@conn, :index), class: "btn btn-default" %>
+</div>
