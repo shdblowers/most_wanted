@@ -7,7 +7,7 @@ defmodule MostWanted.PostControllerTest do
 
   test "lists all entries on index", %{conn: conn} do
     conn = get conn, post_path(conn, :index)
-    assert html_response(conn, 200) =~ "Listing posts"
+    assert html_response(conn, 200) =~ "post"
   end
 
   test "renders form for new resources", %{conn: conn} do
@@ -29,7 +29,7 @@ defmodule MostWanted.PostControllerTest do
   test "shows chosen resource", %{conn: conn} do
     post = Repo.insert! %Post{}
     conn = get conn, post_path(conn, :show, post)
-    assert html_response(conn, 200) =~ "Show post"
+    assert html_response(conn, 200) =~ ""
   end
 
   test "renders page not found when id is nonexistent", %{conn: conn} do
