@@ -7,7 +7,9 @@
   </div>
 </div>
 
-<%= link "Back", to: post_path(@conn, :index) %>
-<br />
-<%= link "Edit", to: post_path(@conn, :edit, @post) %>
-<%= link "Delete", to: post_path(@conn, :delete, @post), method: :delete %>
+<%= link "Back", to: post_path(@conn, :index), class: "btn btn-default" %>
+<%= link "Edit", to: post_path(@conn, :edit, @post), class: "btn btn-default" %>
+<%= link "Delete",
+    to: post_path(@conn, :delete, @post),
+    method: :delete,
+    class: "btn btn-danger" %>
